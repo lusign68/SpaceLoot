@@ -1,5 +1,5 @@
-import { Player, Enemy, Coin, Bullet } from './sprite.js';
-import User from './user.js';
+import { Player, Enemy, Coin, Bullet } from 'sprite.js';
+import User from 'user.js';
 
 export default class Game {
   constructor() {
