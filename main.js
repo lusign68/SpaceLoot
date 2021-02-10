@@ -1,6 +1,6 @@
-import Game from './game.js';
+import Game from 'game.js';
 
-import GameState from './gameState.js';
+import GameState from 'gameState.js';
 
 //Global variables
 let game = new Game();
@@ -22,13 +22,13 @@ window.onload = function() {
   playerImage.onload = function() {
     console.log('rocket image loaded');
   };
-  playerImage.src = '../images/3dRocket.png';
+  playerImage.src = 'images/3dRocket.png';
 
   let bulletImage = game.bulletImage;
   bulletImage.onload = function() {
     console.log('bullet image loaded');
   };
-  bulletImage.src = '../images/bullet.png';
+  bulletImage.src = 'images/bullet.png';
 
   //load start button
   let startButton = new Image();
@@ -47,7 +47,7 @@ window.onload = function() {
       'start'
     );
   };
-  startButton.src = '../images/startButton.jpg';
+  startButton.src = 'images/startButton.jpg';
 
   //load start background
   let startBackground = new Image();
@@ -56,7 +56,7 @@ window.onload = function() {
     gameState.startScreen.backgroundImg = startBackground;
     gameState.home();
   };
-  startBackground.src = '../images/startBackground.jpg';
+  startBackground.src = 'images/startBackground.jpg';
 
   //load home button
   let homeButton = new Image();
@@ -75,7 +75,7 @@ window.onload = function() {
       'home'
     );
   };
-  homeButton.src = '../images/homeButton.jpg';
+  homeButton.src = 'images/homeButton.jpg';
 
   //load next button
   let nextButton = new Image();
@@ -94,7 +94,7 @@ window.onload = function() {
       'next'
     );
   };
-  nextButton.src = '../images/nextButton.jpg';
+  nextButton.src = 'images/nextButton.jpg';
 
   //Please note that upgradeImages must be added to the upgradeScreen in the same order that the upgrades appear in Player.upgradeables
   let cannonUpgradeImage = new Image();
@@ -103,7 +103,7 @@ window.onload = function() {
     gameState.upgradeScreen.addUpgradeImage(cannonUpgradeImage, 'fireRate');
     //gameState.upgradeScreen.addImage(cannonUpgradeImage, center - cannonUpgradeImage.width, canv.height/4, true, "purple", "cannon");
   };
-  cannonUpgradeImage.src = '../images/cannonUpgradeImage.png';
+  cannonUpgradeImage.src = 'images/cannonUpgradeImage.png';
 
   let boostUpgradeImage = new Image();
   boostUpgradeImage.onload = function() {
@@ -113,7 +113,7 @@ window.onload = function() {
     gameState.upgradeScreen.addUpgradeImage(boostUpgradeImage, 'maxBoost');
     //gameState.upgradeScreen.addImage(boostUpgradeImage, center + boostUpgradeImage.width/2, canv.height/4, true, "purple", "boost");
   };
-  boostUpgradeImage.src = '../images/boostUpgradeImage.png';
+  boostUpgradeImage.src = 'images/boostUpgradeImage.png';
 
   let turnUpgradeImage = new Image();
   turnUpgradeImage.onload = function() {
@@ -123,7 +123,7 @@ window.onload = function() {
     gameState.upgradeScreen.addUpgradeImage(turnUpgradeImage, 'turnRate');
     //gameState.upgradeScreen.addImage(boostUpgradeImage, center + boostUpgradeImage.width/2, canv.height/4, true, "purple", "boost");
   };
-  turnUpgradeImage.src = '../images/turnUpgradeImage.png';
+  turnUpgradeImage.src = 'images/turnUpgradeImage.png';
 
   //load plus button
   let plusButton = new Image();
@@ -133,7 +133,7 @@ window.onload = function() {
     //gameState.upgradeScreen.addButton(plusButton, center + cannonUpgradeImage.width - plusButton.width,
     //                                canv.height/4 + cannonUpgradeImage.height - plusButton.height, "plus");
   };
-  plusButton.src = '../images/plusButton.png';
+  plusButton.src = 'images/plusButton.png';
 
   //load minus button
   let minusButton = new Image();
@@ -143,7 +143,7 @@ window.onload = function() {
     //gameState.upgradeScreen.addButton(minusButton, center - cannonUpgradeImage.width,
     //                                canv.height/4 + cannonUpgradeImage.height - minusButton.height, "minus");
   };
-  minusButton.src = '../images/minusButton.png';
+  minusButton.src = 'images/minusButton.png';
 };
 
 document.onkeydown = function(e) {
