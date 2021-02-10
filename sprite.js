@@ -1,4 +1,4 @@
-import { FireRate, MaxBoost, TurnRate } from './upgrade.js';
+import { FireRate, MaxBoost, TurnRate } from 'upgrade.js';
 
 class Sprite {
   constructor(x, y, width, height) {
