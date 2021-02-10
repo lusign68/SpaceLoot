@@ -1,4 +1,4 @@
-import { Screen, GameScreen, UpgradeScreen } from './screen.js';
+import { Screen, GameScreen, UpgradeScreen } from 'screen.js';
 
 export default class GameState {
   constructor(game) {
